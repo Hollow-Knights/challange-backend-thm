@@ -8,10 +8,9 @@ from models import User
 from database import users_collection
 from bson import json_util
 import json
-import os
 
-# Configurações de segurança
-SECRET_KEY = os.environ.get("SECRET_KEY", "seuSegredoSuperSecretoAqui123!@#")  # Em produção, deve ser uma variável de ambiente
+# Configurações de segurança (hardcoded)
+SECRET_KEY = "chaveSuperSecretaParaProducao123!@#"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
